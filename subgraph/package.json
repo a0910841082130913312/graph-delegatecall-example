@@ -1,0 +1,16 @@
+{
+  "name": "delegatecall",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ a0910841082130913312/delegatecall",
+    "create-local": "graph create --node http://localhost:8020/ a0910841082130913312/delegatecall",
+    "remove-local": "graph remove --node http://localhost:8020/ a0910841082130913312/delegatecall",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 a0910841082130913312/delegatecall"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.29.2",
+    "@graphprotocol/graph-ts": "0.26.0"
+  }
+}
